@@ -3,7 +3,6 @@ import Location from './components/Location';
 import './App.css';
 import OneSignal from "react-onesignal";
 import PWAPrompt from 'react-ios-pwa-prompt';
-import TheLocalbase from './components/TheLocalbase';
 
 function App() {
 
@@ -16,7 +15,6 @@ function App() {
   return (
     <div className="App">
      <Location />
-     <TheLocalbase />
      <PWAPrompt />
     </div>
   );

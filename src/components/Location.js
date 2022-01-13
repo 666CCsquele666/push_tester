@@ -1,5 +1,6 @@
 import { geolocated } from "react-geolocated";
 import '../App.css';
+import TheLocalbase from './TheLocalbase';
 
 function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
     if (!isGeolocationAvailable) return <p>Du er en idiot</p>
@@ -73,6 +74,7 @@ function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
                                     animationDirection:"alternate"}}>{coords.speed}</td>
                     </tr>
                 </tbody>
+                <TheLocalbase />
             </table>
     ) : (<p>2 min bro</p>);
 }

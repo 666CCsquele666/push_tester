@@ -22,9 +22,11 @@ function TheLocalbase() {
 
     return ( 
         <>
-            <button onClick={insertIntoDb}>ADD</button>
-            <button onClick={getFromDb}>GET ALL</button>
-            <button onClick={removeFromDb}>DELETE ALL</button>
+            <div className="buttonDiv">
+                <button onClick={insertIntoDb}>ADD</button>
+                <button onClick={getFromDb}>GET ALL</button>
+                <button onClick={removeFromDb}>DELETE ALL</button>
+            </div>
         </>
      );
 }
