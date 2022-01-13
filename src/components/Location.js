@@ -17,7 +17,7 @@ function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
                                     animationName: "glow",
                                     animationDuration: "4s",
                                     animationIterationCount: "infinite",
-                                    animationDirection:"alternate"}}>Latitude</td>
+                                    animationDirection:"alternate"}}>Latitude:</td>
                         <td style={{fontSize:"70px",
                                     animationName: "glow",
                                     animationDuration: "4s",
@@ -29,7 +29,7 @@ function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
                                     animationName: "glow",
                                     animationDuration: "4s",
                                     animationIterationCount: "infinite",
-                                    animationDirection:"alternate"}}>Longitude</td>
+                                    animationDirection:"alternate"}}>Longitude:</td>
                         <td style={{fontSize:"70px",
                                     animationName: "glow",
                                     animationDuration: "4s",
@@ -41,7 +41,7 @@ function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
                                     animationName: "glow",
                                     animationDuration: "4s",
                                     animationIterationCount: "infinite",
-                                    animationDirection:"alternate"}}>Altitude</td>
+                                    animationDirection:"alternate"}}>Altitude:</td>
                         <td style={{fontSize:"70px",
                                     animationName: "glow",
                                     animationDuration: "4s",
@@ -53,7 +53,7 @@ function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
                                     animationName: "glow",
                                     animationDuration: "4s",
                                     animationIterationCount: "infinite",
-                                    animationDirection:"alternate"}}>Heading</td>
+                                    animationDirection:"alternate"}}>Heading:</td>
                         <td style={{fontSize:"70px",
                                     animationName: "glow",
                                     animationDuration: "4s",
@@ -65,7 +65,7 @@ function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
                                     animationName: "glow",
                                     animationDuration: "4s",
                                     animationIterationCount: "infinite",
-                                    animationDirection:"alternate"}}>Speed</td>
+                                    animationDirection:"alternate"}}>Speed:</td>
                         <td style={{fontSize:"70px",
                                     animationName: "glow",
                                     animationDuration: "4s",

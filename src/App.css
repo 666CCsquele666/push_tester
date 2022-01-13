@@ -45,6 +45,14 @@ html{
   background-color: black;
 }
 
+tr{
+  display: flex;
+  justify-content: space-between;
+}
+td:last-child{
+  text-decoration: underline;
+}
+
 table{
   font-family: 'gamle_stil';
   border: groove rgb(0, 13, 53) 10px;
@@ -58,7 +66,6 @@ table{
   letter-spacing:0.5px;
   text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.6);
   -webkit-text-stroke: 0.1px gold;
-
 }
 
 @keyframes extreme {
