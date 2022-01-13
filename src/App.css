@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,51 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+
+@font-face {
+  font-family: 'gamle_stil'; 
+  src: url("/src/fonts/EnglishTowne.ttf");
 }
+html{
+  background-color: black;
+}
+
+table{
+  font-family: 'gamle_stil';
+  border: groove rgb(0, 13, 53) 10px;
+  padding:5%;
+  margin: 0 auto;
+  background-image: url('images/bg.jpg');
+  background-color: #AA0000;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position:center;
+  letter-spacing:0.5px;
+  text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.6);
+  -webkit-text-stroke: 0.1px gold;
+
+}
+
+@keyframes extreme {
+  0%   {color: #FF0000;}
+  25%  {color: #00FFC4;}
+  50%  {color: #FFFFFF;}
+  100% {color: #23FF00;}
+  50%  {color: #FD00FF;}
+  25%  {color: #002DFF;}
+  }
+
+  @keyframes glow {
+    0%{
+      text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+      text-shadow: 0 0 1vw #FFFFFF, 0 0 3vw #FFFFFF, 0 0 10vw #FFFFFF, 0 0 10vw #FFFFFF, 0 0 .4vw #FED128, .4vw .3vw .1vw #806914;
+      color: #000000;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #000000, 0 0 5vw #000000, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .4vw .3vw .1vw #40340A;
+      color: #806914;
+    }
+  }
