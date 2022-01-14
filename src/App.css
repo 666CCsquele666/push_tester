@@ -6,7 +6,21 @@
 html{
   background-color: black;
 }
-
+.kort{
+  border: saddlebrown 5px groove;
+  font-family: 'gamle_stil';
+}
+.marker{
+  height:0.5em;
+  width:0.5em;
+  background-color: #FF0000;
+  border: saddlebrown 2px groove;
+  border-radius: 50%;
+}
+.marker:hover{
+  transform: scale(150%);
+  cursor: pointer;
+}
 tr{
   display: flex;
   justify-content: space-between;
@@ -22,9 +36,10 @@ button{
 }
 button:hover{
   cursor: pointer;
-  box-shadow:0px 0px 7px 10px red;
+  box-shadow:0px 0px 7px 5px red;
   transform: scale(105%);
 }
+
 .buttonDiv {
   
   padding: 2%;
@@ -45,8 +60,8 @@ table{
   overflow: hidden;
   background-color: #AA0000;
   background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-position:center;
+  background-repeat: space;
+  background-position:stretch;
   letter-spacing:0.5px;
   text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.6);
   -webkit-text-stroke: 0.1px gold;

@@ -1,6 +1,7 @@
 import { geolocated } from "react-geolocated";
 import '../App.css';
 import TheLocalbase from './TheLocalbase';
+import Map from "./Map";
 
 function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
     if (!isGeolocationAvailable) return <p>Du er en idiot</p>
@@ -75,6 +76,9 @@ function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
                     </tr>
                 </tbody>
                 <TheLocalbase />
+                <section className="kort">
+                    <Map />
+                </section>
             </table>
     ) : (<p>2 min bro</p>);
 }
