@@ -33,7 +33,8 @@ function Map() {
                 style={GeolocateControlStyle} 
                 trackUserLocation={true}
                 positionOptions={{enableHighAccuracy: true}}
-                showAccuracyCircle={true}/>
+                showAccuracyCircle
+                />
             <Marker latitude={55.6860989} longitude={12.5601893}>
                 <div className="marker"></div>
             </Marker>

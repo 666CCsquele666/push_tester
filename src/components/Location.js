@@ -2,6 +2,8 @@ import { geolocated } from "react-geolocated";
 import '../App.css';
 import TheLocalbase from './TheLocalbase';
 import Map from "./Map";
+import { Link, Route, Routes } from 'react-router-dom';
+import NoMatch from "./NoMatch";
 
 function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
     if (!isGeolocationAvailable) return <p>Du er en idiot</p>
@@ -12,7 +14,24 @@ function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
         >Du skal give adgang din hund</p>
     
     return coords ? ( 
+        <>
         <table style={{margin:"0 auto"}}>
+            <h1>Dette er min menneskelort</h1>
+                <nav>
+                    <Link to="/">Home</Link>
+                    <Link to="/map">Map</Link>
+                    <Link to="/database">Database</Link>
+                    <Link to="/">jaaaa</Link>
+                </nav>
+
+                <Routes>
+                    <Route path="/" element={<Location />} />
+                    <Route path="/map" element={<Map />} />
+                    <Route path="/database" element={<TheLocalbase />} />
+                    <Route path="*" element={<NoMatch />} />
+                </Routes>
+
+        
                 <tbody>
                     <tr>
                         <td style={{fontSize:"70px",
@@ -80,7 +99,10 @@ function Location({isGeolocationAvailable, isGeolocationEnabled, coords}) {
                     <Map />
                 </section>
             </table>
+            </>
     ) : (<p>2 min bro</p>);
+    
+    
 }
 
 export default geolocated({
@@ -88,4 +110,5 @@ export default geolocated({
         enableHighAccuracy: false,
     },
     userDecisionTimeout: 5000,
+    
 })(Location);
